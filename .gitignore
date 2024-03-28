@@ -4,6 +4,8 @@ stockexchange_springboot/build/
 # Ignore Maven build directory
 stockexchange_springboot/target/
 
+stockexchange_springboot/src/main/resources/firebase_config.json
+
 # Ignore Node modules directory
 fakeStock/node_modules/
 
