@@ -26,4 +26,4 @@ stockexchange_springboot/**/*.class
 hs_err_pid*
 replay_pid*
 
-data
+data/kafkazoo
