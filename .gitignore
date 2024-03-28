@@ -25,3 +25,5 @@ stockexchange_springboot/**/*.class
 # Ignore virtual machine crash logs
 hs_err_pid*
 replay_pid*
+
+data
