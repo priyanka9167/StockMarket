@@ -1,16 +1,19 @@
-# Compiled class file
-*.class
+# Ignore Gradle build directory
+stockexchange_springboot/build/
 
-# Log file
+# Ignore Maven build directory
+stockexchange_springboot/target/
+
+# Ignore Node modules directory
+fakeStock/node_modules/
+
+# Ignore any compiled Java classes
+stockexchange_springboot/**/*.class
+
+# Ignore log files
 *.log
 
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
+# Ignore package files
 *.jar
 *.war
 *.nar
@@ -19,6 +22,6 @@
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+# Ignore virtual machine crash logs
 hs_err_pid*
 replay_pid*

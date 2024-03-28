@@ -1,0 +1,115 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres
+    healthcheck:
+      test: [ "CMD", "psql", "-d", "${POSTGRES_DB}", "-U", "${POSTGRES_USER}", "-c", "SELECT 1;" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    env_file: .env
+    environment:
+      - POSTGRES_USER=$POSTGRES_USER
+      - POSTGRES_PASSWORD=$POSTGRES_PASSWORD
+      - POSTGRES_DB=$POSTGRES_DB
+
+    ports:
+      - "5432:5432"
+
+  node_app:
+    depends_on:
+      postgres:
+        condition: service_healthy
+    build:
+      context: fakeStock
+      dockerfile: ../docker/Dockerfile
+    ports:
+      - "3000:3000"
+    env_file: .env
+    environment:
+    - POSTGRES_USER=${POSTGRES_USER}
+    - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    - POSTGRES_DB=${POSTGRES_DB}
+
+  zookeeper:
+    image: confluentinc/cp-zookeeper:latest
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+    ports:
+      - 22181:2181
+    volumes:
+      - ./data/kafkazoo/zookeeper/data:/var/lib/zookeeper/data
+      - ./data/kafkazoo/zookeeper/log:/var/lib/zookeeper/log
+
+  kafka-server-1:
+    image: confluentinc/cp-kafka:latest
+    depends_on:
+      - zookeeper
+    ports:
+      - 29092:29092
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181/kafka1
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka-server-1:9092,PLAINTEXT_HOST://localhost:29092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+    volumes:
+      - ./data/kafkazoo/kafka1:/var/lib/kafka/data
+    healthcheck:
+      test: ["CMD-SHELL", "echo stat | nc localhost 2181 | grep Mode"]
+      interval: 10s
+      timeout: 5s
+      retries: 3 
+
+  kafka-server-2:
+    image: confluentinc/cp-kafka:latest
+    depends_on:
+      - zookeeper
+    ports:
+      - 39092:39092
+    environment:
+      KAFKA_BROKER_ID: 2
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181/kafka2
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka-server-2:9092,PLAINTEXT_HOST://localhost:39092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+    volumes:
+      - ./data/kafkazoo/kafka2:/var/lib/kafka/data 
+
+  manager:
+    image: hlebalbau/kafka-manager:stable
+    ports:
+      - 9000:9000
+    environment:
+      ZK_HOSTS: zookeeper:2181
+    depends_on:
+      - zookeeper
+    platform: linux/amd64 
+
+  spring_app:
+    depends_on:
+      postgres:
+        condition: service_healthy
+    build:
+      context: stockexchange_springboot
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    env_file: .env
+    environment:
+    - POSTGRES_USER=${POSTGRES_USER}
+    - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    - POSTGRES_DB=${POSTGRES_DB}
+
+
+
+
+
+
+
+
+

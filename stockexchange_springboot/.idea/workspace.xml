@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f2b1ae19-04a7-4379-9919-e05bc57ff1fc" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2aUBTdn2V9JLZOKkx9CRnI8NDaw" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;android.gradle.sync.needed&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/pikku/MY/stockexchange&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Facets&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/keystore" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.StockExchangeApplication">
+    <configuration name="build.gradle.kts" type="KotlinStandaloneScriptRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="stockexchange.test" />
+      <option name="filePath" value="$PROJECT_DIR$/build.gradle.kts" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="stockexchange.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="Main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StockControllers" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="stockexchange.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.controllers.StockControllers" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StockExchangeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="stockexchange.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.StockExchangeApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin script (Beta).build.gradle.kts" />
+        <item itemvalue="Spring Boot.Main" />
+        <item itemvalue="Spring Boot.StockControllers" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f2b1ae19-04a7-4379-9919-e05bc57ff1fc" name="Changes" comment="" />
+      <created>1704363287848</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1704363287848</updated>
+      <workItem from="1704363289085" duration="2495000" />
+      <workItem from="1704367515186" duration="196000" />
+      <workItem from="1704476239764" duration="80000" />
+      <workItem from="1704723569190" duration="3498000" />
+      <workItem from="1705218106734" duration="9132000" />
+      <workItem from="1706013251517" duration="6000" />
+      <workItem from="1706139989185" duration="3479000" />
+      <workItem from="1706146453612" duration="1774000" />
+      <workItem from="1706232294373" duration="3019000" />
+      <workItem from="1706310776273" duration="912000" />
+      <workItem from="1706363689643" duration="16000" />
+      <workItem from="1706665277425" duration="9328000" />
+      <workItem from="1706703863997" duration="2000" />
+      <workItem from="1706741110675" duration="2760000" />
+      <workItem from="1706835861422" duration="9838000" />
+      <workItem from="1706849363239" duration="2454000" />
+      <workItem from="1706892569968" duration="2846000" />
+      <workItem from="1706923061331" duration="8000" />
+      <workItem from="1706985327325" duration="20615000" />
+      <workItem from="1707058153114" duration="14759000" />
+      <workItem from="1707265803438" duration="653000" />
+      <workItem from="1707314561790" duration="595000" />
+      <workItem from="1707437448761" duration="914000" />
+      <workItem from="1707785238679" duration="670000" />
+      <workItem from="1708016605571" duration="897000" />
+      <workItem from="1708306824175" duration="1441000" />
+      <workItem from="1708392052448" duration="5859000" />
+      <workItem from="1708476487119" duration="5823000" />
+      <workItem from="1708569606015" duration="1153000" />
+      <workItem from="1708571155767" duration="4070000" />
+      <workItem from="1708614220340" duration="2291000" />
+      <workItem from="1708691863027" duration="613000" />
+      <workItem from="1708828209570" duration="2213000" />
+      <workItem from="1708914032859" duration="5619000" />
+      <workItem from="1708953752920" duration="54000" />
+      <workItem from="1708994292202" duration="4909000" />
+      <workItem from="1709093864209" duration="5510000" />
+      <workItem from="1709165063413" duration="12481000" />
+      <workItem from="1709238474904" duration="176000" />
+      <workItem from="1709248742849" duration="5923000" />
+      <workItem from="1709255692751" duration="3736000" />
+      <workItem from="1709408003212" duration="12852000" />
+      <workItem from="1709429838754" duration="5046000" />
+      <workItem from="1709520152450" duration="1181000" />
+      <workItem from="1709599548353" duration="6671000" />
+      <workItem from="1709681732012" duration="9284000" />
+      <workItem from="1709772693116" duration="13756000" />
+      <workItem from="1710033146609" duration="1604000" />
+      <workItem from="1710111874782" duration="14064000" />
+      <workItem from="1710183800497" duration="7012000" />
+      <workItem from="1710197453348" duration="18000" />
+      <workItem from="1710197490722" duration="133000" />
+      <workItem from="1710197630631" duration="28000" />
+      <workItem from="1710197670743" duration="5682000" />
+      <workItem from="1710285130549" duration="7980000" />
+      <workItem from="1710447263785" duration="791000" />
+      <workItem from="1710531084924" duration="8000" />
+      <workItem from="1710722056676" duration="4846000" />
+      <workItem from="1710800389496" duration="10593000" />
+      <workItem from="1710880360890" duration="343000" />
+      <workItem from="1710881704473" duration="10654000" />
+      <workItem from="1710969509191" duration="14244000" />
+      <workItem from="1711056870720" duration="15780000" />
+      <workItem from="1711247510161" duration="1124000" />
+      <workItem from="1711320518430" duration="9161000" />
+      <workItem from="1711501202186" duration="3915000" />
+      <workItem from="1711583619331" duration="753000" />
+      <workItem from="1711588386604" duration="50000" />
+      <workItem from="1711588561818" duration="1068000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
