@@ -8,9 +8,14 @@ stockexchange_springboot/src/main/resources/firebase_config.json
 
 # Ignore Node modules directory
 fakeStock/node_modules/
+fakeStock/.env
 
 # Ignore any compiled Java classes
 stockexchange_springboot/**/*.class
+stockexchange_springboot/.env
+stockexchange_springboot/
+stockexchange_springboot/src/main/resources/trading-6acb7-firebase-adminsdk-eypk5-5fef37dd21.json
+.env
 
 # Ignore log files
 *.log
